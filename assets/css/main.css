@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; 
+}
+body{
+    font-family: 'Fira Sans', sans-serif;
+    background-image: url(../img/bg.jpg);
+}
+:root{
+    --myColor : #DBE8D4;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+h1{
+    font-size: 4rem;
+    text-align: center;
+    color: #DBE8D4;
+}
+.container{
+    margin: auto;
+    width: 80%;
+}
+.overlay{
+    background-color: #469fe4;
+    position: absolute;
+    
+    opacity: .6;
+    z-index: -1;
+}
+/* start updown section */
+.updown{
+    background-color: white;
+    height: 60px;
+    width: 40px;
+    text-align: right;
+    position: fixed;
+    top: 100px;
+    right: 0;
+    border-top-left-radius: 15%;
+    border-bottom-left-radius: 15%;
+   z-index: 99999;
+
+}
+.updown li a i{
+    color: #333;
+    font-size: 16px;
+    margin-top: 7px;
+    margin-right: 8px;
+}
+.updown li a i:hover{
+    color: blue;
+    cursor: pointer;
+}
+/* end updown section */
+/*start nav*/
+.nav{
+    background-color:rgb(21, 5, 57);
+}
+.nav .navs{
+    display: flex;
+}
+.nav .navleft{
+    width: 50%;
+}
+.nav .navleft img{
+    margin-top: 15px;
+    width: 20%;
+    background-color: azure;
+}
+.nav .navright{
+    width: 40%;
+    margin-left: auto;
+}
+.nav .navright .list{
+    float: left;
+    display: flex;
+}
+.nav .navright .list .item{
+    width: fit-content;
+    margin: 0 10px;
+    padding: 20px 0 ;
+}
+.nav .navright .list .item a{
+    color: var(--myColor);
+}
+.nav .navright .list .item:hover a{
+    color: white;
+}
+/*end nav*/
+/*start header*/
+.header{
+    margin: 30px 0 0 30px;
+}
+.header h2{
+    text-align: center;
+    margin-bottom: 15px;
+    color: blanchedalmond;
+}
+.header p{
+    padding: 15px;
+    color: var(--myColor);
+    text-align: center;
+    margin-top: 25px;
+    width: 50%;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    border: 1px solid var(--myColor);
+}
+.header img{
+    width: 20%;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+}
+.header button{
+    border-radius: 15px;
+    background-color: blueviolet;
+    margin: 25px auto 0 auto;
+    display:block;
+    padding: 15px;
+    font-size: 1rem;
+}
+.header button:hover{
+    background-color: #333;
+    border-radius: 30px;
+}
+.header button:hover a{
+    color: #DBE8D4;
+}
+/*end header*/
+/*start about*/
+.about{
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+.about h2{
+    color: white;
+    font-size: 2.5rem;
+    text-align: center;
+    border-bottom: 3px solid var(--myColor);
+    margin-bottom: 30px;
+}
+.about .content{
+    display: flex;
+}
+.about .content .img{
+    width: 30%;
+    margin-right: 40px;
+}
+.about .content .img img{
+    width: 100%;
+}
+.about .content .states{
+    width: 60%;
+    color: white;
+    text-align: left;
+    font-size: 2rem;
+    padding: 25px;
+}
+.about .content .states span{
+    margin-left: 15px;
+}
+.about .content .states li{
+    margin-bottom: 15px;
+}
+/*end about*/
+/* start portfolio*/
+.portfolio{
+    margin-top: 25px;
+    margin-bottom: 6rem;
+}
+.portfolio h2{
+    color: white;
+    font-size: 2.5rem;
+    text-align: center;
+    border-bottom: 3px solid var(--myColor);
+    margin-bottom: 30px;
+}
+.portfolio .items {
+    display: flex;
+}
+.portfolio .items .item{
+    justify-content: center;
+    align-items: center;
+    width: 33%;
+    height: 350px;
+    margin-left: 15px;
+}
+.portfolio .items .item img{
+    width: 100%;
+}
+.portfolio .items .item a{
+    color: white;
+    font: 2rem;
+    padding: 10px;
+    background-color: #469fe4;
+    border: 1px solid var(--myColor);
+    border-radius: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.portfolio .items .item a:hover{
+    color: #469fe4;
+    background-color: white;
+    border-color: blue;
+}
+/*end portfolio*/
+/*start bio*/
+.bio{
+    margin-top: 6rem;
+    margin-bottom: 35px;
+    color: #DBE8D4;
+}
+.bio h2{
+    color: white;
+    font-size: 2.5rem;
+    text-align: center;
+    border-bottom: 3px solid var(--myColor);
+    margin-bottom: 30px;
+}
+.bio .parts{
+    display: flex;
+}
+.bio .parts .part{
+    width: 33%;
+    font-size: 1.5rem;
+}
+.bio .parts .part li{
+    margin-top: 15px;
+    font-size: 1rem;
+    color: aliceblue;
+}
+/*end bio*/
+/*start contact*/
+.contact{
+    margin-top: 6rem;
+    margin-bottom: 35px;
+    color: #DBE8D4;
+}
+.contact h2{
+    color: white;
+    font-size: 2.5rem;
+    text-align: center;
+    border-bottom: 3px solid var(--myColor);
+    margin-bottom: 30px;
+}
+.contact .input{
+    margin-top: 20px;
+    font-size: 2rem;
+}
+.contact .input input{
+    width: 100%;
+    height: 40px;
+    margin-bottom:20px ;
+}
+.contact button{
+    padding: 10px;
+    border-radius: 15px;
+    font-size: 1.5rem;
+    color: #469fe4;
+    background-color: #DBE8D4;
+    cursor: pointer;
+}
+.contact button:hover{
+    color: #DBE8D4;
+    background-color: #333;
+    border-radius: 30px;
+}
+/*end contact*/
+/*start footer*/
+.footer{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: #DBE8D4;
+}
+.footer .content{
+    display: flex;
+}
+.footer .content .left{
+    width:80%; 
+}
+.footer .left p{
+    font-size: 2rem;
+
+}
+.footer .content .right{
+    width:20%; 
+}
+.footer .content .right a{
+    background-color: #469fe4;
+    color: white;
+    border: 2px solid brown;
+    padding: 10px;
+    border-radius: 10px;
+}
+.footer .content .right a:hover{
+    background-color: white;
+    color: #469fe4;
+    border: 2px dashed #DBE8D4;
+    border-radius: 20px;
+}
